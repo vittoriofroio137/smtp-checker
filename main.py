@@ -13,8 +13,8 @@ def verify_email(email):
 
         server = smtplib.SMTP(timeout=10)
         server.connect(mx_host)
-        server.helo("example.com")
-        server.mail("check@example.com")
+        server.helo("consulenzadedicata.com")
+        server.mail("n.vellani@consulenzadedicata.com")
         code, message = server.rcpt(email)
         server.quit()
 
